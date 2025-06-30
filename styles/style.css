@@ -1,0 +1,96 @@
+
+
+html{ 
+    font-size: 62.5%;
+}
+
+h1 { 
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 10rem;
+    font-weight: bold;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 4rem;
+}
+
+h3 {
+    color: black;
+    text-align: left;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 3rem;
+
+}
+
+p {
+    color: black;
+    text-align: justify;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 2rem;
+}
+
+nav {
+    color: rgb(0, 0, 0);
+    text-align:center;
+    text-decoration: none;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 3rem;
+}
+
+ul {
+    color: black;
+    list-style: none;
+    text-align: left;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+body {
+    background-color: #78B1C6 ;
+    color: black;    
+}
+
+header {
+    background-color: #C9CFD1 ;
+}
+
+footer {
+    background-color: #1F6278;
+    color: aliceblue;
+}
+
+footer ul{
+    color: aliceblue;
+}
+
+nav {
+    list-style: none ;
+    text-decoration: none;
+    text-align: center;
+}
+
+section {
+    background-color: #DADADA;
+}
+
+.logo {
+    width: 100px;
+}
+
+.imagen { 
+    width: 400px;
+}
+
+.imagen2 { 
+    width: 70%;
+    }
+
+.imagen3 { 
+    width: 200px;
+}
