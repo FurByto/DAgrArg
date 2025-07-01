@@ -1,17 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 html{ 
     font-size: 62.5%;
 }
 
-h1 { 
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 10rem;
-    font-weight: bold;
+header{
+    display: grid;
+    background-color: rgb(134, 221, 236);
+    margin-top: 1%;
+    padding: 0.2%;
+    grid-template-columns: 1fr 4fr;   
 }
 
+.imagenes  {
+    display: flex;
+    flex-direction: row;
+    
+}
+a{
+    text-decoration: none;
+}
+
+.proyecto{
+    margin: 2%;
+    border-style: solid;
+    border-color: black;
+    display: grid;
+    grid-template-columns: 3fr 3fr 5fr 1fr;
+}
+
+header div{
+    display: flex;
+    flex-direction: column;
+}
+
+header div h1 {
+    text-align: left;
+}
+
+.container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 10px;
+}
+
+.header__navbar {
+    margin: 2%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+header div div nav ul{
+    display: flex;
+    justify-content: right;
+}
+
+header div div nav ul div {
+    padding: 15%;
+}
+
+
+
+main div div{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont_imagen_fina {
+    background-color: #d6ebeb;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+}
+.imagen_ancha {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    object-fit: cover;
+}
+
+
+body {
+    background-color: #d6ebeb ;
+    color: black;    
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+}
+
+
+h1 { 
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-family: "Roboto Flex", sans-serif;
+        font-size: 10rem;
+        font-weight: bold;
+}
+
+header div h1{
+    font-size: 4rem;
+}
 h2 {
     color: rgb(0, 0, 0);
     text-align: left;
@@ -34,63 +133,107 @@ p {
     font-size: 2rem;
 }
 
-nav {
-    color: rgb(0, 0, 0);
-    text-align:center;
-    text-decoration: none;
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 3rem;
+.div_interno {
+    background-color: aliceblue;
 }
 
-ul {
-    color: black;
-    list-style: none;
-    text-align: left;
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 2rem;
-    text-decoration: none;
-}
-
-body {
-    background-color: #78B1C6 ;
-    color: black;    
-}
-
-header {
-    background-color: #C9CFD1 ;
-}
+ ul {
+        color: black;
+        list-style: none;
+        text-align: left;
+        font-family: "Roboto Flex", sans-serif;
+        font-size: 2rem;
+        text-decoration: none;
+    }
 
 footer {
-    background-color: #1F6278;
-    color: aliceblue;
-}
+        background-color: #1F6278;
+        color: aliceblue;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
 
 footer ul{
-    color: aliceblue;
+        color: aliceblue;
+        text-align: center;
 }
 
-nav {
-    list-style: none ;
-    text-decoration: none;
-    text-align: center;
-}
 
 section {
     background-color: #DADADA;
 }
 
 .logo {
-    width: 100px;
+    width: 150px;
+    margin: 5px;
 }
 
 .imagen { 
     width: 400px;
+    margin: 5px
 }
 
 .imagen2 { 
-    width: 70%;
+    width: 20%;
+    margin: 5px
     }
 
 .imagen3 { 
     width: 200px;
+    margin: 5px
 }
+  
+
+/* Media query para tabletas */
+@media (min-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    header, main, footer {
+        padding: 20px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+/* Media query para computadoras de escritorio */
+@media (min-width: 1024px) {
+    body {
+        
+        margin: 0 auto;
+    }
+
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+}
+
+   
+
+
+    
+
+    
