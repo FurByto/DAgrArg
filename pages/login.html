@@ -4,75 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAgrArg - LogIn</title>
-    <link rel="stylesheet" href="../styles/style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-                         
-        <h1>
-            DAgrArg
-        </h1>
-        <h2>
-            Desarrollos Agrícolas Argentinos
-        </h2>
-
-        <img src="../assets/logo.png" alt="logo" class="logo" >
-
-        <nav>
-            <ul>                 
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="quienessomos.html">Quienes somos</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>             
-     
+             <div class="head--ppal">
+            <div >
+                <h1>
+                    DAgrArg
+                </h1>
+                <h2>
+                    Desarrollos Agrícolas Argentinos
+                </h2>
+            </div>
+            <div>
+                <a href="../index.html"><img src="../assets/logo.png" alt="logo DAgrArg" class="logo"></a>
+            </div>
+            <div>
+                <h1>Socios</h1>
+            </div>
+            <div>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="quienessomos.html">Quiénes somos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="proyectos.html">Proyectos</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Más opciones
+                                    </a>
+                                    <ul class="dropdown-menu">                                       
+                                        <li><a class="dropdown-item" href="servicios.html">Servicios</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                                    </ul>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div> 
     </header>
+    
     <main>
-        
-        <section>
-            <h2>Log in socios DAgrAr</h2>
+        <div class="div_ppal">
+        <section class="container">
+                <h1 class="row">Log in socios DAgrAr</h1>
 
-            <form action="/submit" method="post">
-                <label for="usuario">Usuario</label>
-                <input type="text" name="usuario" id="usuario">
+                <form action="/submit" method="post" class="row">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" id="usuario">
 
-                <label for="contraseña">Contraseña</label>
-                <input type="text" name="contraseña" id="contraseña">
-                
-                <button type="submit">Ingresar</button>
+                    <label for="contraseña">Contraseña</label>
+                    <input type="text" name="contraseña" id="contraseña">
+                    
+                    <button type="submit">Ingresar</button>
 
-            </form>
+                </form>
 
-        </section>
-        
-        <div>
-            <h3>¿Aún no está registrado como socio?</h3>
-            <button>Quiero asociarme</button>
+            </section>
+            
+            <div class="div_medio">
+                <h3>¿Aún no está registrado como socio?</h3>
+                <button type="button" class="btn btn-primary btn-lg">Asociarme</button>
+            </div>
+
+
         </div>
-
-        <div>
-            <img src="../assets/logo.png" alt="logo" class="logo">
-        </div>
-        
     </main>
 
     
-    <footer>        
-        <ul>
-            <li>Teléfono de contacto:  +5492615568547</li>
-            <li>administracion@dargarg.com.ar</li>
-        </ul>
+    <footer>
         <div>
-            <img src="../assets/ig.png" alt="ig" class="logo"></a>
-            <img src="../assets/fb.png" alt="fb" class="logo"></a>
-            <img src="../assets/in.png" alt="in" class="logo"></a>
+            <ul>
+                <li>
+                    <h3>Teléfono de contacto:  +5492615568547</h3>
+                </li>
+                <li>
+                    <h4>administracion@dargarg.com.ar</h4>
+                </li>
+            </ul>
+        </div>        
+       
+        <div class="rrss">
+            <div>
+                <a href="http:www.instagram.com"><img src="../assets/ig.png" alt="logo_instagram"></a>
+            </div>
+            <div>
+                <a href="http:www.facebook.com"><img src="../assets/fb.png" alt="logo_facebook"></a>
+            </div>
+            <div>
+                <a href="http:www.linkedin.com"><img src="../assets/in.png" alt="logo_linkedin"></a>
+            </div>
+           
         </div>    
     </footer>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
 </body>
 </html>

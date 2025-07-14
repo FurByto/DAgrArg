@@ -1,0 +1,17 @@
+@mixin flex {
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin grid-container ($grid, $columns, $rows, $gap, $height){
+    display: $grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    column-gap: $gap;
+    max-height: $height;
+}
