@@ -34,6 +34,9 @@ header div div nav {
 body main {
   background-color: rgba(255, 255, 255, 0.89);
 }
+body main img {
+  overflow: hidden;
+}
 body main .carousel-container {
   padding: 5px;
   width: 100%;
@@ -91,14 +94,39 @@ body main .carousel-slide img {
   }
 }
 body main .logo {
-  width: 100px;
+  width: 8em;
   margin: 5px;
 }
-body main div div .imagen_cuerpo {
-  max-width: 400px;
-  padding: 5px;
+body main .div_ppal, body main div .div_ppal {
+  padding-top: 100px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
 }
-body main .grid--container {
+body main div div .imagen_cuerpo {
+  max-width: 350px;
+  overflow: hidden;
+  padding: 5px;
+  object-fit: cover;
+}
+body main div .div_ppal div .row {
+  justify-content: center;
+}
+body main div .div_ppal div .row h2 {
+  text-align: center;
+}
+body main div .div_ppal div .row ul {
+  list-style: none;
+}
+body main div .div_ppal div section .container-fluid .row img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+body main div .div_ppal div section .container-fluid .div_proyecto {
+  background-color: black;
+}
+body main div .grid--container {
   display: grid;
   grid-template-columns: 0.5fr 3fr 1fr;
   grid-template-rows: 500px;
@@ -108,52 +136,57 @@ body main .grid--container {
   align-items: center;
   justify-content: center;
 }
-body main .grid--container .div_interno {
+body main div .grid--container .div_interno {
   padding: 5px;
   text-align: center;
 }
-body main .grid--container .div_interno img {
+body main div .grid--container .div_interno img {
   height: 0px;
   width: 100%;
   object-fit: cover;
 }
-body main .container .row, body main .container-fluid .row {
+body main div .container .row, body main div .container-fluid .row, body main div .div_ppal div section .container-fluid .row {
   min-height: 100px;
   align-content: center;
 }
-body main .container .row h1, body main .container-fluid .row h1 {
+body main div .container .row h1, body main div .container-fluid .row h1, body main div .div_ppal div section .container-fluid .row h1 {
   text-align: center;
 }
-body main .container .row .row, body main .container-fluid .row .row {
+body main div .container .row .row, body main div .container-fluid .row .row {
   list-style: none;
   align-content: center;
   text-align: center;
 }
-body main .container .row .row img, body main .container-fluid .row .row img {
+body main div .container .row .row img, body main div .container-fluid .row .row img {
   max-width: 200px;
   max-height: 200px;
 }
-body main .div_ppal {
-  padding-top: 100px;
-  align-content: center;
+body main div .fila_alta {
+  height: 600px;
 }
-body main .div_ppal div .row {
-  align-content: center;
-}
-body main .div_medio {
+body main div .div_medio {
   padding: 5px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
-body main .container-fluid h2 {
+body main div .container-fluid h2, body main div .div_ppal div section .container-fluid h2 {
+  text-align: center;
+  justify-content: center;
+}
+body main div .row h1 {
   text-align: center;
 }
-body main .row h1 {
-  text-align: center;
-}
-body main .row .row img {
+body main div .row .row img {
   height: 400px;
   width: 80%;
   object-fit: cover;
+}
+body main section .div_medio {
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -176,12 +209,12 @@ footer .rrss {
   align-items: center;
   justify-content: space-between;
 }
-footer .rrss img {
-  width: 100%;
-  object-fit: cover;
-}
 footer .rrss div {
   padding: 10px;
+}
+footer .rrss div a img {
+  width: 100%;
+  object-fit: cover;
 }
 footer div ul {
   padding: 5px;
@@ -194,11 +227,11 @@ footer div ul {
     width: 80px;
     margin: 15px;
   }
-  body main .grid--container .div_interno img {
-    height: 300px;
+  body main div .grid--container .div_interno img {
+    height: 400px;
   }
-  footer .rrss div img {
-    height: 8em;
+  footer .rrss img {
+    height: 50px;
     object-fit: cover;
     object-position: center;
   }

@@ -92,11 +92,18 @@ body{
         }
 
         .logo{
-            width: 100px;
+            width: 8em;
             margin: 5px;
         }
 
-
+        
+        .div_ppal{
+        padding-top: 100px;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;    
+        }
+    
 
         div{
             div{
@@ -108,10 +115,7 @@ body{
                 }                             
             }
             .div_ppal{
-            padding-top: 100px;
-            align-content: center;
-            justify-content: center;
-            justify-items: center;
+                @extend .div_ppal;
             div{
                 .row{
                     justify-content: center;
@@ -153,9 +157,9 @@ body{
                     padding: $padding_imp;
                     text-align: center;
                     img{
-                    height: 0px;
-                    width: 100%;
-                    object-fit: cover;
+                        height: 0px;
+                        width: 100%;
+                        object-fit: cover;
                     }
                 }
             }
@@ -185,7 +189,7 @@ body{
                                     
         
             .div_medio{
-                padding: $padding_imp;
+                padding: $padding_imp;                
                 text-align: center;
                 justify-content: center;
                 align-items: center
@@ -212,6 +216,14 @@ body{
             }
 
         }
+        section{
+            .div_medio{
+                padding: $padding_imp;                
+                text-align: center;
+                justify-content: center;
+                align-items: center
+            }
+        }
     }
 }
 
@@ -229,12 +241,15 @@ footer{
         align-items: center;
         justify-content: space-between;
         
-        img{
-            width: 100%;       
-            object-fit: cover;
-        }
+       
         div{
-            padding: 10px;
+            padding: 10px; 
+            a{
+                img{
+                width: 100%;       
+                object-fit: cover;
+                }
+            }
         }
     }
     div{
@@ -269,10 +284,12 @@ footer{
 
     body{
         main{
-            .grid--container{
-                .div_interno{
-                    img{
-                        height: 300px;
+            div{
+                .grid--container{
+                    .div_interno{
+                        img{
+                            height: 400px;
+                        }
                     }
                 }
             }
@@ -280,15 +297,13 @@ footer{
     }
 
     footer{
-        .rrss{            
-            div{               
-                img{          
-                    
-                    height: 8em;     
-                    object-fit: cover;
-                    object-position: center;
-                }               
-            }
+        .rrss{                                       
+            img{                        
+                height: 50px;     
+                object-fit: cover;
+                object-position: center;
+            }               
+            
         }
     }
 }
